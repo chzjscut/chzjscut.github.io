@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Pac-Man . 吃豆游戏</title>
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- <style>
+			body{background-color: #292929}
+			*{padding:0;margin:0;}
+			.wrapper{
+				width: 960px;
+				margin:0 auto;
+				line-height:36px;
+				text-align:center;
+				color:#999;
+			}
+			canvas{display:block;background: #000;}
+			.mod-botton{
+				height: 32px;
+				padding: 15px 0;
+				text-align: center;
+			}
+		</style> -->
+		<style>
+			.wrapper {
+				width: 600px;
+				height: 320px;
+				margin: 50px auto;
+				overflow: hidden;
+			}
+			.wrapper>div {
+				width: 150px;
+				height: 80px;
+				float: left;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="div0"></div><div id="div1"></div><div id="div2"></div><div id="div3"></div>
+			<div id="div4"></div><div id="div5"></div><div id="div6"></div><div id="div7"></div>
+			<div id="div8"></div><div id="div9"></div><div id="div10"></div><div id="div11"></div>
+			<div id="div12"></div><div id="div13"></div><div id="div14"></div><div id="div15"></div>
+		</div>
+		<script>
+			function Person(first, last, age, gender, interests) {
+				this.name = {
+					first,
+					last
+				};
+				this.age = age;
+				this.gender = gender;
+				this.interests = interests;
+			};
+			Person.prototype.greeting = function() {
+				console.log("Hi! I'm " + this.name.first + ".");
+			};
+
+			function Teacher(first, last, age, gender, interests, subject) {
+				Person.call(this, first, last, age, gender, interests);
+
+				this.subject = subject;
+			};
+		</script>
+	</body>
+</html>
